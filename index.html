@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Tasks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Tasks</h1>
+            <p class="subtitle">Organize your life, gracefully.</p>
+        </header>
+
+        <section class="add-task-section glass-panel">
+            <form id="task-form">
+                <div class="input-group">
+                    <input type="text" id="task-input" placeholder="What needs to be done?" autocomplete="off" required>
+                </div>
+                <div class="input-group group-select">
+                    <select id="category-select">
+                        <option value="Personal">Personal</option>
+                        <option value="Work">Work</option>
+                        <option value="Shopping">Shopping</option>
+                        <option value="Health">Health</option>
+                    </select>
+                    <button type="submit" class="btn-primary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                        Add
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <main id="tasks-container">
+            <!-- Grouped Tasks will be rendered here dynamically -->
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
